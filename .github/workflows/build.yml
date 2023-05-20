@@ -33,16 +33,16 @@ jobs:
           python3 maker.py
           rm dist/*
       
-      - name: Push snapshot package
-        uses: "marvinpinto/action-automatic-releases@latest"
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "snapshot"
-          prerelease: false
-          title: "TeamSpeak 3 zh-CN translation snapshot build"
-          files: |
-            Chinese_Translation_zh-CN.ts3_translation
+#       - name: Push snapshot package
+#         uses: "marvinpinto/action-automatic-releases@latest"
+#         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+#         with:
+#           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#           automatic_release_tag: "snapshot"
+#           prerelease: false
+#           title: "TeamSpeak 3 zh-CN translation snapshot build"
+#           files: |
+#             Chinese_Translation_zh-CN.ts3_translation
       
       - name: Upload mappings
         uses: actions/upload-artifact@v3
