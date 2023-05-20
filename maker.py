@@ -115,10 +115,10 @@ def make_package(release_list):
     with open(ini, "w", encoding="utf-8") as f:
         package_info = [f"Name = TeamSpeak 3 简体中文汉化包 软件版本:{target_version}",
                         "Type = Translation",
-                        "Author = 寂听 & EdisonJwa",
+                        "Author = KW逆戟鲸WENFXL",
                         f"Version = {timestamp}",
                         "Platforms = ",
-                        'Description = 源代码: https://github.com/VigorousPro/TS3-Translation_zh-CN']
+                        'Description = 此文件可以辅助让TS3原版汉化为中文
         f.write("\n".join(package_info))
 
     file_name = 'Chinese_Translation_zh-CN.ts3_translation'
