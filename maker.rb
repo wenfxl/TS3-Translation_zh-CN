@@ -86,10 +86,10 @@ def make_package(zipfile_name, build_version=nil, log_url=nil)
     package_info = [
       "Name = TeamSpeak 3 简体中文汉化包 目标软件版本: #{target_version}",
       "Type = Translation",
-      "Author = 寂听 & EdisonJwa",
+      "Author = KW逆戟鲸WENFXL",
       "Version = travis-dev-build##{build_version}",
       "Platforms = ",
-      "Description = 源代码: https://github.com/jitingcn/TS3-Translation_zh-CN" + 
+      "Description = 此文件辅助ts3汉化为中文" + 
       "    构建日志: #{log_url unless log_url.nil?}"]
     file.write(package_info.join("\n"))
   end
