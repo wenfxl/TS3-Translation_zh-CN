@@ -51,7 +51,7 @@ jobs:
           path: Chinese_Translation_zh-CN.ts3_translation
           
       - name: Setup Ossutil
-        uses: manyuanrong/setup-ossutil@v2.0
+        uses: manyuanrong/setup-ossutil@v3.0
         with:
           endpoint: ${{ secrets.OSS_ENDPOINT }}
           access-key-id: ${{ secrets.OSS_KEY_ID }}
