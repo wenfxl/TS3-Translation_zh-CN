@@ -118,7 +118,7 @@ def make_package(release_list):
                         "Author = KW逆戟鲸WENFXL",
                         f"Version = {timestamp}",
                         "Platforms = ",
-                        'Description = 此文件可以辅助让TS3原版汉化为中文
+                        'Description = 此文件可以辅助让TS3原版汉化为中文']
         f.write("\n".join(package_info))
 
     file_name = 'Chinese_Translation_zh-CN.ts3_translation'
